@@ -1,4 +1,4 @@
-## lsj-bbbbb
+## lsp-bbbbb
 自动化做 b 站任务
 
 ## Feature
