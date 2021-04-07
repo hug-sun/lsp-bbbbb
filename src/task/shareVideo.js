@@ -2,7 +2,7 @@ const { getCsrf } = require("../user");
 const { post, get } = require("../request");
 // 分享视频
 exports.execute = async () => {
-  if (await isShare()) {
+  if (await isShared()) {
     console.log("今日已经分享过视频了");
     return;
   }
@@ -22,7 +22,7 @@ async function share(aid) {
   }
 }
 
-async function isShare() {
+async function isShared() {
   const {
     data: { share_av },
   } = await getDailyTaskInfo();
