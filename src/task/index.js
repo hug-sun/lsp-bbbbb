@@ -2,6 +2,7 @@
 // todo 先实现一个任务把 比如自动投币 -> 把每日投币的逻辑移植过来
 const { execute: coin } = require("./coin");
 const { execute: shareVideo } = require("./shareVideo");
+const { execute: watchVideo } = require("./watchVideo");
 
 const tasks = [];
 
@@ -10,8 +11,10 @@ function addTask(task) {
 }
 
 // 注册 task
+// 每日任务
 // addTask(coin);
 addTask(shareVideo);
+addTask(watchVideo);
 
 exports.start = async function start() {
   // 并行的执行所有的任务
