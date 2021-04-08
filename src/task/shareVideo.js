@@ -6,7 +6,7 @@ exports.execute = async () => {
     console.log("今日已经分享过视频了");
     return;
   }
-  share(getShareVideoAid());
+  share(await getShareVideoAid());
 };
 
 async function share(aid) {
