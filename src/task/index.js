@@ -12,9 +12,9 @@ function addTask(task) {
 
 // 注册 task
 // 每日任务
-// addTask(coin);
-addTask(shareVideo);
-addTask(watchVideo);
+addTask(coin);
+// addTask(shareVideo);
+// addTask(watchVideo);
 
 exports.start = async function start() {
   // 并行的执行所有的任务
