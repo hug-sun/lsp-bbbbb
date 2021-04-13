@@ -36,6 +36,9 @@ exports.updateMoney = async function updateMoney() {
 };
 
 exports.isSelfVideo = (mid) => {
+  if(!mid){
+    console.log("没有 mid",mid)
+  }
   return userData.mid === mid;
 };
 
